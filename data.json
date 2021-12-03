@@ -1,0 +1,11 @@
+{
+    "projects": [
+        {
+            "title": "This is the project title",
+            "description": "This is the project description.",
+            "image": "",
+            "repo": "",
+            "live": ""
+        }
+    ]
+}
