@@ -24,7 +24,10 @@ body {
   cursor: url("https://res.cloudinary.com/nobill/image/upload/v1631960506/portfolio2021/cursor.png"), auto;
 }
 
-html { scroll-behavior: smooth; }
+html { 
+  scroll-behavior: smooth;
+  font-size: 18px;
+}
 
 a {
   color: inherit;
@@ -56,6 +59,12 @@ a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.logoSplash {
+  perspective: 40em;
+  height: 50px;
+  width: 50px;
 }
 
 #header {
@@ -94,9 +103,23 @@ a {
   -webkit-transition: 0.5s cubic-bezier(0.01, 0.91, 0.32, 1.28);
   -o-transition: 0.5s cubic-bezier(0.01, 0.91, 0.32, 1.28);
   transition: 0.5s cubic-bezier(0.01, 0.91, 0.32, 1.28); 
+  aspect-ratio: 1 / 1;
 }
 
 .picture:hover {
+  -webkit-transform: scale(1.01);
+  -ms-transform: scale(1.01);
+  transform: scale(1.01);
+}
+
+.projectImg {
+  border: 4px dashed var(--color-primary);
+  -webkit-transition: 0.5s cubic-bezier(0.01, 0.91, 0.32, 1.28);
+  -o-transition: 0.5s cubic-bezier(0.01, 0.91, 0.32, 1.28);
+  transition: 0.5s cubic-bezier(0.01, 0.91, 0.32, 1.28);   
+}
+
+.projectImg:hover {
   -webkit-transform: scale(1.01);
   -ms-transform: scale(1.01);
   transform: scale(1.01);

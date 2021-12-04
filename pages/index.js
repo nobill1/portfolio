@@ -36,7 +36,7 @@ export default function Home() {
       {" "}
       {preloader ? (
         <div className="loader-wrapper absolute">
-          <Logo className="logoSplash" />
+          <Logo className="logoSplash animate-pulse" />
         </div>
       ) : (
         <>
@@ -45,7 +45,7 @@ export default function Home() {
             <section className="flex flex-col mx-4 sm:mx-0 md:flex-row xl:justify-around">
               <div className="flex flex-col text-center justify-center presentation md:text-left">
                 <p>Hi, I am</p>
-                <h1 className="font-body text-hd1 leading-snug text-secondary md:max-w-md">
+                <h1 className="font-body text-hd1 leading-snug text-secondary msm:text-5xl break-words md:max-w-md">
                   Nguimeya Bill-gates
                 </h1>
                 <p className="mt-6 mb-10 md:max-w-md">
@@ -138,8 +138,8 @@ export default function Home() {
                 <Image
                   src="https://res.cloudinary.com/nobill/image/upload/v1631955604/portfolio2021/poster-01.png"
                   alt="me"
-                  width="1296"
-                  height="1728"
+                  width="512"
+                  height="512"
                   layout="responsive"                  
                 />
               </div>
@@ -154,7 +154,7 @@ export default function Home() {
                 {data.projects.map((project, index) => {
                   return (
                     <div key={project.id}>
-                      <div className="picture relative shadow-small hover:shadow-large mt-4 w-auto">
+                      <div className="projectImg relative shadow-small hover:shadow-large mt-4 w-auto">
                         <p>{project[index]}</p>
                         <div
                           id="overlay"
@@ -176,7 +176,7 @@ export default function Home() {
                           return (
                             <p
                               key={index}
-                              className="px-2 py-1 bg-secondary text-primary font-bold"
+                              className="px-2 py-1 bg-secondary text-primary font-bold leading-none"
                             >
                               {item}
                             </p>
@@ -194,7 +194,7 @@ export default function Home() {
                           </a>
                         </Link>
                         <Link
-                          href={project.repo}
+                          href={project.live}
                           target="_blank"
                           rel="noopener noreferrer"
                         >
