@@ -123,14 +123,14 @@ export default function Home() {
                 <p className="mt-2">
                   A few technologies I have been working with recently:
                 </p>
-                <ul className="mt-2 list-inside list-disc font-mono grid grid-rows-2 grid-cols-2 msm:grid-cols-1">                  
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>JavaScript</li>
-                  <li>React</li>
-                  <li>NextJS</li>                  
-                  <li>NodeJS</li>
-                  <li>GraphQL</li>
+                <ul className="mt-2 list-inside list-disc font-sans grid grid-rows-2 grid-cols-2 msm:grid-cols-1">                  
+                  <li>HTML <i className="lni lni-html5 text-sm"></i></li>
+                  <li>CSS <i className="lni lni-css3 text-sm"></i></li>
+                  <li>JavaScript <i className="lni lni-javascript text-sm"></i></li>
+                  <li>React <i className="lni lni-react text-sm"></i></li>
+                  <li>NextJS <i className="lni lni-react text-sm"></i></li>                  
+                  <li>NodeJS <i className="lni lni-nodejs text-sm"></i></li>
+                  <li>GraphQL <i className="lni lni-graphql text-sm"></i></li>
                 </ul>
               </div>
               <div className="picture relative shadow-small hover:shadow-large w-full md:flex-shrink md:mt-0 mt-4">
