@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
@@ -33,7 +32,6 @@ export default function Home() {
 
   return (
     <>
-      {" "}
       {preloader ? (
         <div className="loader-wrapper absolute">
           <Logo className="logoSplash animate-pulse" />
@@ -106,7 +104,7 @@ export default function Home() {
                 <Illustration className="w-60 xl:w-80"/>
               </div>
             </section>
-            <section className="flex flex-col minor-section mx-4 mt-12 mmd:mt-16 sm:mx-0 md:flex-row md:items-start md:gap-4" id="about">
+            <section className="flex flex-col minor-section mx-4 mt-12 mmd:mt-16 sm:mx-0 md:flex-row md:items-start md:gap-4 scroll-mt-24 lg:my-48" id="about">
               <div className="flex flex-col">
                 <div>
                   <h2 className="text-primary text-hd2 sectionHeading leading-none inline-block mb-6">
@@ -144,7 +142,7 @@ export default function Home() {
                 />
               </div>
             </section>
-            <section className="flex flex-col minor-section mx-4 mt-12 mmd:mt-16 sm:mx-0" id="projects">
+            <section className="flex flex-col minor-section mx-4 mt-12 mmd:mt-16 sm:mx-0 scroll-mt-24 lg:my-48" id="projects">
               <div>
                 <h2 className="text-primary text-hd2 sectionHeading leading-none inline-block mb-6">
                   Stuff I&apos;ve built
@@ -185,11 +183,11 @@ export default function Home() {
                       </div>
                       <div className="mt-2">
                         <Link
-                          href={project.repo}
+                          href={project.repo}                          
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          <a className="text-primary mr-2 hover:text-secondary icon">
+                          <a className={project.repo.length < 1 ? "hidden": "text-primary mr-2 hover:text-secondary icon"}>
                             <i className="lni lni-github text-xl"></i>
                           </a>
                         </Link>
@@ -198,7 +196,7 @@ export default function Home() {
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          <a className="text-primary mr-2 hover:text-secondary icon">
+                          <a className={project.live.length < 1 ? "hidden": "text-primary mr-2 hover:text-secondary icon"}>
                             <i className="lni lni-website text-xl"></i>
                           </a>
                         </Link>
@@ -208,7 +206,7 @@ export default function Home() {
                 })}
               </div>
             </section>
-            <section className="flex flex-col minor-section mx-4 mt-12 mmd:mt-16 sm:mx-0" id="technologies">
+            <section className="flex flex-col minor-section mx-4 mt-12 mmd:mt-16 sm:mx-0 scroll-mt-24 lg:my-48" id="technologies">
               <div>
                 <h2 className="text-primary text-hd2 sectionHeading leading-none inline-block mb-6">
                   Technologies
@@ -260,7 +258,7 @@ export default function Home() {
                 <p className="font-body">And many more...</p>
               </div>
             </section>
-            <section className="flex flex-col justify-center minor-section mx-4 mt-12 sm:mx-0" id="contact">
+            <section className="flex flex-col justify-center minor-section mx-4 mt-12 sm:mx-0 scroll-mt-24" id="contact">
               <div>
                 <h2 className="text-primary text-hd2 sectionHeading leading-none inline-block mb-6">
                   Contact

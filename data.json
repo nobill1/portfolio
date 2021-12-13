@@ -1,6 +1,14 @@
 {
     "projects": [
         {
+            "title": "Music Charts API",
+            "description": "Music chart API",
+            "image": "https://res.cloudinary.com/nobill/image/upload/v1639436211/Projects/apiscreenshot.png",
+            "repo": "",
+            "live": "https://rapidapi.com/nobill1/api/uk-official-charts/",
+            "tech": ["NodeJS", "Express", "Cheerio", "axios"]
+        },
+        {
             "title": "Tip calculator",
             "description": "A tip calculator made in html, Tailwindcss and JavaScript",
             "image": "https://res.cloudinary.com/nobill/image/upload/v1638533469/Projects/screenshot.png",
