@@ -2,7 +2,7 @@
     "projects": [
         {
             "title": "Music Charts API",
-            "description": "Music chart API",
+            "description": "API built with nodeJS to serve music charting according to UK charts.",
             "image": "https://res.cloudinary.com/nobill/image/upload/v1639436211/Projects/apiscreenshot.png",
             "repo": "",
             "live": "https://rapidapi.com/nobill1/api/uk-official-charts/",
@@ -10,7 +10,7 @@
         },
         {
             "title": "Tip calculator",
-            "description": "A tip calculator made in html, Tailwindcss and JavaScript",
+            "description": "A tip calculator made in html, Tailwindcss and JavaScript.",
             "image": "https://res.cloudinary.com/nobill/image/upload/v1638533469/Projects/screenshot.png",
             "repo": "https://github.com/nobill1/tip-calculator-app-main",
             "live": "https://tip-calculator-app-main-nobill1.vercel.app/",
@@ -18,7 +18,7 @@
         },
         {
             "title": "Space Tourism",
-            "description": "A space discovery website",
+            "description": "A space discovery website.",
             "image": "https://res.cloudinary.com/nobill/image/upload/v1638533469/Projects/spacescreenshot.png",
             "repo": "https://github.com/nobill1/space-tourism",
             "live": "https://space-tourism-nobill1.vercel.app/",
