@@ -1,6 +1,14 @@
 {
     "projects": [
         {
+            "title": "Wookie Movies Library",
+            "description": "A movie library with search and detail movie pages.",
+            "image": "https://res.cloudinary.com/nobill/image/upload/v1639436211/Projects/wookiescreenshot.png",
+            "repo": "https://github.com/nobill1/wookiemovies",
+            "live": "https://wookiemovies.vercel.app/",
+            "tech": ["React 18", "Typescript", "NextJS", "React Context API", "axios"]
+        },
+        {
             "title": "Music Charts API",
             "description": "API built with nodeJS to serve music charting according to UK charts.",
             "image": "https://res.cloudinary.com/nobill/image/upload/v1639436211/Projects/apiscreenshot.png",
