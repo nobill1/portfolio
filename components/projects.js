@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import data from "../data.json";
+import { FaGithub, FaLink } from 'react-icons/fa';
 
 export default function Projects() {
   return (
@@ -56,7 +57,7 @@ export default function Projects() {
                         : "text-primary mr-2 hover:text-secondary icon"
                     }
                   >
-                    <i className="lni lni-github text-xl"></i>
+                  <FaGithub className='text-xl inline'/>
                   </a>
                 </Link>
                 <Link
@@ -71,7 +72,7 @@ export default function Projects() {
                         : "text-primary mr-2 hover:text-secondary icon"
                     }
                   >
-                    <i className="lni lni-website text-xl"></i>
+                  <FaLink className='text-xl inline'/>
                   </a>
                 </Link>
               </div>

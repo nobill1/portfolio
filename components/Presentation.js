@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Illustration from "./illustration";
+import { FaLinkedinIn, FaCodepen, FaGithub, FaTwitter, FaInstagram } from "react-icons/fa";
 
 function Presentation() {
   return (
@@ -25,41 +26,41 @@ function Presentation() {
             href="https://www.linkedin.com/in/nguimeya-bill-gates-9b614b146"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-primary mr-2 hover:text-secondary icon"
+            className="text-primary mr-2 hover:text-secondary icon text-2xl"
           >
-          <i className="lni lni-linkedin text-2xl"></i>
+            <FaLinkedinIn />
           </a>
           <a
             href="https://codepen.io/Bill1"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-primary mr-2 hover:text-secondary icon"
+            className="text-primary mr-2 hover:text-secondary icon text-2xl"
           >
-            <i className="lni lni-codepen text-2xl"></i>
+            <FaCodepen />
           </a>
           <a
             href="https://github.com/nobill1"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-primary mr-2 hover:text-secondary icon"
+            className="text-primary mr-2 hover:text-secondary icon text-2xl"
           >
-            <i className="lni lni-github text-2xl"></i>
+            <FaGithub />
           </a>
           <a
             href="https://twitter.com/go_bill_go"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-primary mr-2 hover:text-secondary icon"
+            className="text-primary mr-2 hover:text-secondary icon text-2xl"
           >
-            <i className="lni lni-twitter text-2xl"></i>
+            <FaTwitter />
           </a>
           <a
             href="https://www.instagram.com/go_bill_go/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-primary hover:text-secondary icon"
+            className="text-primary hover:text-secondary icon text-2xl"
           >
-            <i className="lni lni-instagram-original text-2xl"></i>
+            <FaInstagram />
           </a>
         </div>
       </div>

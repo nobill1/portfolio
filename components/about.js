@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs } from 'react-icons/fa'
 
 export default function About() {
   return (
@@ -24,25 +25,25 @@ export default function About() {
         </p>
         <ul className="mt-2 list-inside list-disc font-sans grid grid-rows-2 grid-cols-2 msm:grid-cols-1">
           <li>
-            HTML <i className="lni lni-html5 text-sm"></i>
+            HTML <FaHtml5 className='inline'/>
           </li>
           <li>
-            CSS <i className="lni lni-css3 text-sm"></i>
+            CSS <FaCss3 className='inline'/>
           </li>
           <li>
-            JavaScript <i className="lni lni-javascript text-sm"></i>
+            JavaScript <FaJs className='inline'/>
           </li>
           <li>
-            React <i className="lni lni-react text-sm"></i>
+            React <FaReact className='inline'/>
           </li>
           <li>
-            NextJS <i className="lni lni-react text-sm"></i>
+            NextJS <FaReact className='inline'/>
           </li>
           <li>
-            NodeJS <i className="lni lni-nodejs text-sm"></i>
+            NodeJS <FaNodeJs className='inline'/>
           </li>
           <li>
-            GraphQL <i className="lni lni-graphql text-sm"></i>
+            GraphQL
           </li>
         </ul>
       </div>
