@@ -16,7 +16,7 @@ export default function Projects() {
       <div className="grid grid-flow-row sm:grid-cols-2 gap-4">
         {data.projects.map((project, index) => {
           return (
-            <div key={project.id}>
+            <div key={index}>
               <div className="projectImg relative shadow-small hover:shadow-large mt-4 w-auto">
                 <p>{project[index]}</p>
                 <div id="overlay" className="w-full h-full absolute"></div>
