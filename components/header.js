@@ -56,24 +56,18 @@ export default function Header() {
 
           <div className="flex gap-2">
             {theme && currentTheme === "dark" ? (
-              <button>
-                <HiSun
-                  className="text-2xl text-yellow-300"
-                  onClick={() => setTheme("light")}
-                />
+              <button className="text-2xl text-yellow-300 t-btn" onClick={() => setTheme("light")}>
+                <HiSun/>
               </button>
             ) : (
-              <button>
-                <HiMoon
-                  className="text-2xl text-gray-500"
-                  onClick={() => setTheme("dark")}
-                />
+              <button className="text-2xl text-gray-500 t-btn" onClick={() => setTheme("dark")}>
+                <HiMoon/>
               </button>
             )}
 
             <button
               onClick={showSidebar}
-              className="text-2xl text-primary transition-colors delay-100 hover:text-secondary focus:border-none dark:hover:text-rose-500 sm:hidden"
+              className="text-2xl text-primary dark:text-red-900 transition-colors delay-100 hover:text-secondary focus:border-none dark:hover:text-rose-500 sm:hidden"
             >
               <FaBars />
             </button>
@@ -84,7 +78,7 @@ export default function Header() {
               <div className="mt-8 flex w-full justify-end">
                 <button
                   onClick={showSidebar}
-                  className="mr-7 text-2xl text-secondary transition-colors delay-100 hover:text-white"
+                  className="mr-7 text-2xl text-secondary transition-colors delay-100 hover:text-white dark:text-rose-500 dark:hover:text-white"
                 >
                   <FaTimes />
                 </button>
@@ -92,28 +86,28 @@ export default function Header() {
               <ul className="mt-16 flex flex-col">
                 <li className="ml-4 mb-8" onClick={showSidebar}>
                   <Link href="#about">
-                    <a className="text-xl uppercase tracking-wider text-secondary transition-colors delay-100 hover:text-white">
+                    <a className="text-xl uppercase tracking-wider text-secondary transition-colors delay-100 hover:text-white dark:text-rose-500 dark:hover:text-white">
                       about
                     </a>
                   </Link>
                 </li>
                 <li className="ml-4 mb-8" onClick={showSidebar}>
                   <Link href="#technologies">
-                    <a className="text-xl uppercase tracking-wider text-secondary transition-colors delay-100 hover:text-white">
+                    <a className="text-xl uppercase tracking-wider text-secondary transition-colors delay-100 hover:text-white dark:text-rose-500 dark:hover:text-white">
                       technologies
                     </a>
                   </Link>
                 </li>
                 <li className="ml-4 mb-8" onClick={showSidebar}>
                   <Link href="#projects">
-                    <a className="text-xl uppercase tracking-wider text-secondary transition-colors delay-100 hover:text-white">
+                    <a className="text-xl uppercase tracking-wider text-secondary transition-colors delay-100 hover:text-white dark:text-rose-500 dark:hover:text-white">
                       projects
                     </a>
                   </Link>
                 </li>
                 <li className="ml-4 mb-8" onClick={showSidebar}>
                   <Link href="#contact">
-                    <a className="text-xl uppercase tracking-wider text-secondary transition-colors delay-100 hover:text-white">
+                    <a className="text-xl uppercase tracking-wider text-secondary transition-colors delay-100 hover:text-white dark:text-rose-500 dark:hover:text-white">
                       contact
                     </a>
                   </Link>

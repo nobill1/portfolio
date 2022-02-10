@@ -13,7 +13,7 @@
   }
 
   .nav-menu {
-    @apply absolute h-screen top-0 right-0 z-10 w-screen bg-primary
+    @apply absolute h-screen top-0 right-0 z-10 w-screen bg-primary dark:bg-red-900
   }
 
   .button {
@@ -46,6 +46,10 @@ a {
 }
 
 * button {
+  cursor: url("https://res.cloudinary.com/nobill/image/upload/v1631960506/portfolio2021/pointer.png"), auto;
+}
+
+.t-btn {
   cursor: url("https://res.cloudinary.com/nobill/image/upload/v1631960506/portfolio2021/pointer.png"), auto;
 }
 
