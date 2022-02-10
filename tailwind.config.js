@@ -1,6 +1,6 @@
 module.exports = {
   content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {
       fontFamily: {        
@@ -50,7 +50,9 @@ module.exports = {
         small: '4px 4px 0px 0px rgba(113,196,189,1)',
         large: '8px 8px 0px 0px rgba(113,196,189,1)',   
         smallB: '4px 4px 0px 0px rgba(27,20,100,1);',
-        largeB: '8px 8px 0px 0px rgba(27,20,100,1);'  
+        largeB: '8px 8px 0px 0px rgba(27,20,100,1);', 
+        small_dark: '4px 4px 0px 0px rgba(244,63,94,1)',
+        large_dark: '8px 8px 0px 0px rgba(244,63,94,1)',         
       }
     },
   },

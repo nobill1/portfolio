@@ -40,17 +40,17 @@ function Index() {
       ) : (
         <>
           <Header />
-          <main className="container pt-20 mx-auto md:px-4 lg:px-6">
+          <main className="container mx-auto pt-20 md:px-4 lg:px-6">
             <Presentation />
             <About />
             <Projects />
-            <Technologies/>
+            <Technologies />
             <section
-              className="flex flex-col justify-center minor-section mx-4 mt-12 sm:mx-0 scroll-mt-24"
+              className="minor-section mx-4 mt-12 flex scroll-mt-24 flex-col justify-center sm:mx-0"
               id="contact"
             >
               <div>
-                <h2 className="text-primary text-hd2 sectionHeading leading-none inline-block mb-6">
+                <h2 className="sectionHeading mb-6 inline-block text-hd2 leading-none text-primary">
                   Contact
                 </h2>
               </div>
@@ -60,7 +60,7 @@ function Index() {
                 </p>
               </div>
 
-              <div className="mt-3 py-md flex justify-center">
+              <div className="py-md mt-3 flex justify-center">
                 <Link
                   href="mailto:bnguimeya007@gmail.com"
                   target="_blank"

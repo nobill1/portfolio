@@ -1,26 +1,26 @@
-import Link from 'next/link'
-import Image from 'next/image'
+import Link from "next/link";
+import Image from "next/image";
 import data from "../data.json";
-import { FaGithub, FaLink } from 'react-icons/fa';
+import { FaGithub, FaLink } from "react-icons/fa";
 
 export default function Projects() {
   return (
     <section
-      className="flex flex-col minor-section mx-4 mt-12 mmd:mt-16 sm:mx-0 scroll-mt-24 lg:my-48"
+      className="minor-section mx-4 mt-12 flex scroll-mt-24 flex-col sm:mx-0 lg:my-48 mmd:mt-16"
       id="projects"
     >
       <div>
-        <h2 className="text-primary text-hd2 sectionHeading leading-none inline-block mb-6">
+        <h2 className="sectionHeading mb-6 inline-block text-hd2 leading-none text-primary">
           Stuff I&apos;ve built
         </h2>
       </div>
-      <div className="grid grid-flow-row sm:grid-cols-2 gap-4">
+      <div className="grid grid-flow-row gap-4 sm:grid-cols-2">
         {data.projects.map((project, index) => {
           return (
             <div key={index}>
-              <div className="projectImg relative shadow-small hover:shadow-large mt-4 w-auto">
+              <div className="projectImg relative mt-4 w-auto shadow-small hover:shadow-large">
                 <p>{project[index]}</p>
-                <div id="overlay" className="w-full h-full absolute"></div>
+                <div id="overlay" className="absolute h-full w-full"></div>
                 <Image
                   src={project.image}
                   alt="me"
@@ -30,14 +30,14 @@ export default function Projects() {
                   className="h-full w-auto"
                 />
               </div>
-              <h3 className="text-hd3 mt-2">{project.title}</h3>
+              <h3 className="mt-2 text-hd3">{project.title}</h3>
               <p>{project.description}</p>
               <div className="flex flex-wrap gap-2">
                 {project.tech.map((item, index) => {
                   return (
                     <p
                       key={index}
-                      className="px-2 py-1 bg-secondary text-primary font-bold leading-none"
+                      className="bg-secondary px-2 py-1 font-bold leading-none text-primary dark:text-red-900 dark:bg-rose-500"
                     >
                       {item}
                     </p>
@@ -54,10 +54,10 @@ export default function Projects() {
                     className={
                       project.repo.length < 1
                         ? "hidden"
-                        : "text-primary mr-2 hover:text-secondary icon"
+                        : "icon mr-2 text-primary hover:text-secondary dark:hover:text-rose-500"
                     }
                   >
-                  <FaGithub className='text-xl inline'/>
+                    <FaGithub className="inline text-xl" />
                   </a>
                 </Link>
                 <Link
@@ -69,10 +69,10 @@ export default function Projects() {
                     className={
                       project.live.length < 1
                         ? "hidden"
-                        : "text-primary mr-2 hover:text-secondary icon"
+                        : "icon mr-2 text-primary hover:text-secondary dark:hover:text-rose-500"
                     }
                   >
-                  <FaLink className='text-xl inline'/>
+                    <FaLink className="inline text-xl" />
                   </a>
                 </Link>
               </div>

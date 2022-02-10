@@ -8,12 +8,16 @@
 @tailwind utilities;
 
 @layer base {
+  body {
+    @apply dark:bg-black
+  }
+
   .nav-menu {
     @apply absolute h-screen top-0 right-0 z-10 w-screen bg-primary
   }
 
   .button {
-    @apply font-body py-4 px-6 bg-primary tracking-wider text-white border-4 border-secondary border-dashed shadow-small hover:shadow-large hover:border-primary hover:bg-secondary
+    @apply font-body py-4 px-6 bg-primary tracking-wider text-white border-4 border-secondary border-dashed shadow-small hover:shadow-large hover:border-primary hover:bg-secondary dark:border-rose-500 dark:bg-red-900 dark:hover:border-red-900 dark:hover:bg-rose-500 dark:shadow-small_dark dark:hover:shadow-large_dark
   }  
 }
 
@@ -45,6 +49,10 @@ a {
   cursor: url("https://res.cloudinary.com/nobill/image/upload/v1631960506/portfolio2021/pointer.png"), auto;
 }
 
+* p, li, a {
+  @apply dark:text-gray-300
+}
+
 .loader-wrapper {
   background: var(--color-primary);
   height: 100%;
@@ -58,6 +66,7 @@ a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  @apply dark:bg-red-900
 }
 
 .logoSplash {
@@ -93,6 +102,7 @@ a {
 .sectionHeading {
   border-bottom: 4px dashed var(--color-secondary);
   flex-basis: auto;
+  @apply dark:text-red-900 dark:border-b-4 dark:border-b-rose-500
 }
 
 .picture {
@@ -101,6 +111,7 @@ a {
   -o-transition: 0.5s cubic-bezier(0.01, 0.91, 0.32, 1.28);
   transition: 0.5s cubic-bezier(0.01, 0.91, 0.32, 1.28); 
   aspect-ratio: 1 / 1;
+  @apply dark:border-b-4 dark:border-red-900 dark:shadow-small_dark dark:hover:shadow-large_dark
 }
 
 .picture:hover {
@@ -114,6 +125,7 @@ a {
   -webkit-transition: 0.5s cubic-bezier(0.01, 0.91, 0.32, 1.28);
   -o-transition: 0.5s cubic-bezier(0.01, 0.91, 0.32, 1.28);
   transition: 0.5s cubic-bezier(0.01, 0.91, 0.32, 1.28);   
+  @apply dark:border-red-900 dark:shadow-small_dark dark:hover:shadow-large_dark
 }
 
 .projectImg:hover {
@@ -152,6 +164,7 @@ a {
   -webkit-transition: 0.5s ease all;
   -o-transition: 0.5s ease all;
   transition: 0.5s ease all;
+  @apply dark:text-red-900
 }
 
 .icon:hover {
@@ -169,6 +182,7 @@ a {
 
 .tech-items {
   border: 4px dashed var(--color-primary);
+  @apply dark:border-red-900
 }
 
 @media (min-width: 1024px) {

@@ -3,60 +3,88 @@ import { useState } from "react";
 import Link from "next/link";
 import Head from "next/head";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { useTheme } from "next-themes";
+import { HiSun, HiMoon } from "react-icons/hi";
 
 export default function Header() {
   const [sidebar, setSidebar] = useState(false);
   const showSidebar = () => setSidebar(!sidebar);
+  const { systemTheme, theme, setTheme } = useTheme();
+
+  const currentTheme = theme === "system" ? systemTheme : theme;
+
   return (
     <>
       <Head>
         <title>Nguimeya Bill-gates</title>
       </Head>
-      <div className="w-screen fixed z-10 backdrop-blur-2xl" id="header">
-        <div className="container mx-auto left-0 right-0 flex justify-between items-center p-4 sm:justify-center">
-          <Link href="#about">
-            <a className="uppercase msm:hidden hover:text-secondary sm:mr-10 transition-colors delay-100">
-              about
-            </a>
-          </Link>
-          <Link href="#projects">
-            <a className="uppercase msm:hidden hover:text-secondary transition-colors delay-100">
-              projects
-            </a>
-          </Link>
-          <Link href="/">
-            <a className="flex justify-center z-20 sm:mx-14 logo">
-              <Image
-                src="/logo.svg"
-                alt="logo"
-                width="47"
-                height="48"
-                className=""
-              />
-            </a>
-          </Link>
-          <Link href="#technologies">
-            <a className="uppercase msm:hidden hover:text-secondary sm:mr-10 transition-colors delay-100">
-              technologies
-            </a>
-          </Link>
-          <Link href="#contact">
-            <a className="uppercase msm:hidden hover:text-secondary transition-colors delay-100">contact</a>
-          </Link>
+      <div className="fixed z-10 w-screen bg-white bg-opacity-80 backdrop-blur-2xl dark:bg-black dark:bg-opacity-80 dark:backdrop-blur-2xl">
+        <div className="container left-0 right-0 mx-auto flex items-center justify-between p-4">
+          <div className="flex items-center sm:mx-auto">
+            <Link href="#about">
+              <a className="uppercase leading-none transition-colors delay-100 hover:text-secondary dark:hover:text-rose-500 sm:mr-10 msm:hidden">
+                about
+              </a>
+            </Link>
+            <Link href="#projects">
+              <a className="uppercase leading-none transition-colors delay-100 hover:text-secondary dark:hover:text-rose-500 msm:hidden">
+                projects
+              </a>
+            </Link>
+            <Link href="/">
+              <a className="logo z-20 flex justify-center sm:mx-14">
+                <Image
+                  src={theme === "dark" ? "/logo_dark.svg" : "/logo.svg"}
+                  alt="logo"
+                  width="47"
+                  height="48"
+                  className=""
+                />
+              </a>
+            </Link>
+            <Link href="#technologies">
+              <a className="uppercase leading-none transition-colors delay-100 hover:text-secondary dark:hover:text-rose-500 sm:mr-10 msm:hidden">
+                technologies
+              </a>
+            </Link>
+            <Link href="#contact">
+              <a className="uppercase leading-none transition-colors delay-100 hover:text-secondary dark:hover:text-rose-500 msm:hidden">
+                contact
+              </a>
+            </Link>
+          </div>
 
-          <button
-            onClick={showSidebar}
-            className="sm:hidden focus:border-none text-2xl text-primary hover:text-secondary transition-colors delay-100"
-          >
-            <FaBars />
-          </button>
+          <div className="flex gap-2">
+            {theme && currentTheme === "dark" ? (
+              <button>
+                <HiSun
+                  className="text-2xl text-yellow-300"
+                  onClick={() => setTheme("light")}
+                />
+              </button>
+            ) : (
+              <button>
+                <HiMoon
+                  className="text-2xl text-gray-500"
+                  onClick={() => setTheme("dark")}
+                />
+              </button>
+            )}
+
+            <button
+              onClick={showSidebar}
+              className="text-2xl text-primary transition-colors delay-100 hover:text-secondary focus:border-none dark:hover:text-rose-500 sm:hidden"
+            >
+              <FaBars />
+            </button>
+          </div>
 
           <nav className={sidebar ? "nav-menu" : "hidden"}>
             <div className="container mx-auto">
-              <div className="flex justify-end w-full mt-8">
+              <div className="mt-8 flex w-full justify-end">
                 <button
                   onClick={showSidebar}
-                  className="mr-7 text-2xl text-secondary hover:text-white transition-colors delay-100"
+                  className="mr-7 text-2xl text-secondary transition-colors delay-100 hover:text-white"
                 >
                   <FaTimes />
                 </button>
@@ -64,28 +92,28 @@ export default function Header() {
               <ul className="mt-16 flex flex-col">
                 <li className="ml-4 mb-8" onClick={showSidebar}>
                   <Link href="#about">
-                    <a className="uppercase text-secondary text-xl tracking-wider hover:text-white transition-colors delay-100">
+                    <a className="text-xl uppercase tracking-wider text-secondary transition-colors delay-100 hover:text-white">
                       about
                     </a>
                   </Link>
                 </li>
                 <li className="ml-4 mb-8" onClick={showSidebar}>
                   <Link href="#technologies">
-                    <a className="uppercase text-secondary text-xl tracking-wider hover:text-white transition-colors delay-100">
+                    <a className="text-xl uppercase tracking-wider text-secondary transition-colors delay-100 hover:text-white">
                       technologies
                     </a>
                   </Link>
                 </li>
                 <li className="ml-4 mb-8" onClick={showSidebar}>
                   <Link href="#projects">
-                    <a className="uppercase text-secondary text-xl tracking-wider hover:text-white transition-colors delay-100">
+                    <a className="text-xl uppercase tracking-wider text-secondary transition-colors delay-100 hover:text-white">
                       projects
                     </a>
                   </Link>
                 </li>
                 <li className="ml-4 mb-8" onClick={showSidebar}>
                   <Link href="#contact">
-                    <a className="uppercase text-secondary text-xl tracking-wider hover:text-white transition-colors delay-100">
+                    <a className="text-xl uppercase tracking-wider text-secondary transition-colors delay-100 hover:text-white">
                       contact
                     </a>
                   </Link>
