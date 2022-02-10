@@ -47,6 +47,21 @@ function Index() {
             <Technologies />
             <section
               className="minor-section mx-4 mt-12 flex scroll-mt-24 flex-col justify-center sm:mx-0"
+              id="blog"
+            >
+              <div>
+                <h2 className="sectionHeading mb-6 inline-block text-hd2 leading-none text-primary">
+                  Blog
+                </h2>
+              </div>
+              <div className="text-center">
+                <h3 className="text-[150px] msm:text-5xl leading-none mx-auto bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary dark:from-red-900 dark:to-rose-500">
+                  Coming soon!
+                </h3>
+              </div>
+            </section>
+            <section
+              className="minor-section mx-4 mt-12 flex scroll-mt-24 flex-col justify-center sm:mx-0"
               id="contact"
             >
               <div>
