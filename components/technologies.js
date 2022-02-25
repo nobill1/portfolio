@@ -12,6 +12,7 @@ import {
   SiNextdotjs,
   SiGraphql,
   SiMongodb,
+  SiSvelte,
 } from "react-icons/si";
 
 export default function Technologies() {
@@ -41,6 +42,10 @@ export default function Technologies() {
         <div className="tech-items flex flex-col items-center justify-center py-3">
           <SiTypescript className="mb-1 text-5xl text-secondary dark:text-rose-500" />
           <p className="font-body">Typescript</p>
+        </div>
+        <div className="tech-items flex flex-col items-center justify-center py-3">
+          <SiSvelte className="mb-1 text-5xl text-secondary dark:text-rose-500" />
+          <p className="font-body">Svelte</p>
         </div>
         <div className="tech-items flex flex-col items-center justify-center py-3">
           <FaReact className="mb-1 text-5xl text-secondary dark:text-rose-500" />

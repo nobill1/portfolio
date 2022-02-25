@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs } from "react-icons/fa";
-import { SiGraphql } from "react-icons/si";
+import { SiGraphql, SiSvelte } from "react-icons/si";
 import { useTheme } from "next-themes";
 
 export default function About() {
@@ -48,6 +48,9 @@ export default function About() {
           </li>
           <li>
             GraphQL <SiGraphql className="inline" />
+          </li>
+          <li>
+            Svelte <SiSvelte className="inline" />
           </li>
         </ul>
       </div>
