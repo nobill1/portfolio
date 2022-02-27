@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Head from "next/head";
 import { useState, useEffect, useRef } from "react";
 import Header from "../components/header";
 import Footer from "../components/footer";
@@ -33,6 +34,7 @@ function Index() {
 
   return (
     <>
+      <Head>Portfolio / Nguimeya Bill-gates</Head>
       {preloader ? (
         <div className="loader-wrapper absolute">
           <Logo className="logoSplash animate-pulse" />
@@ -46,26 +48,26 @@ function Index() {
             <Projects />
             <Technologies />
             <section
-              className="minor-section mx-4 mt-12 flex scroll-mt-24 flex-col justify-center sm:mx-0"
+              className="minor-section scroll-mt-24 mx-4 mt-12 flex flex-col justify-center sm:mx-0"
               id="blog"
             >
               <div>
-                <h2 className="sectionHeading mb-6 inline-block text-hd2 leading-none text-primary">
+                <h2 className="sectionHeading text-hd2 text-primary mb-6 inline-block leading-none">
                   Blog
                 </h2>
               </div>
               <div className="text-center">
-                <h3 className="text-[150px] msm:text-5xl leading-none mx-auto bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary dark:from-red-900 dark:to-rose-500">
+                <h3 className="msm:text-5xl from-primary to-secondary dark:to-rose-500 mx-auto bg-gradient-to-r bg-clip-text text-[150px] leading-none text-transparent dark:from-red-900">
                   Coming soon!
                 </h3>
               </div>
             </section>
             <section
-              className="minor-section mx-4 mt-12 flex scroll-mt-24 flex-col justify-center sm:mx-0"
+              className="minor-section scroll-mt-24 mx-4 mt-12 flex flex-col justify-center sm:mx-0"
               id="contact"
             >
               <div>
-                <h2 className="sectionHeading mb-6 inline-block text-hd2 leading-none text-primary">
+                <h2 className="sectionHeading text-hd2 text-primary mb-6 inline-block leading-none">
                   Contact
                 </h2>
               </div>

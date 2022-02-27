@@ -5,7 +5,7 @@ class MyDocument extends Document {
     return (
       <Html className="scroll-smooth">
         <Head>
-          <meta name="description" content="My portfolio" />
+          <meta name="description" content="Software engineer | Front-end developer" />
           <link rel="icon" href="/favicon.png" />
           <link
             href="https://api.fontshare.com/css?f[]=nippo@500&display=swap"
