@@ -23,7 +23,7 @@ function Index() {
   useEffect(() => {
     id.current = window.setInterval(() => {
       setTimer((timer) => timer - 1);
-    }, 1000);
+    }, 2000);
   }, []);
 
   useEffect(() => {
@@ -37,7 +37,7 @@ function Index() {
       <Head>Portfolio / Nguimeya Bill-gates</Head>
       {preloader ? (
         <div className="loader-wrapper absolute">
-          <Logo className="logoSplash animate-pulse" />
+          <Logo className="logoSplash h-64 w-auto" />
         </div>
       ) : (
         <>
