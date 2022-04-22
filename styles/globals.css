@@ -9,26 +9,26 @@
 
 @layer base {
   body {
-    @apply dark:bg-black
+    @apply dark:bg-black;
   }
 
   .nav-menu {
-    @apply absolute h-screen top-0 right-0 z-10 w-screen bg-primary dark:bg-red-900
+    @apply absolute top-0 right-0 z-10 h-screen w-screen bg-primary dark:bg-red-900;
   }
 
   .button {
-    @apply font-body py-4 px-6 bg-primary tracking-wider text-white border-4 border-secondary border-dashed shadow-small hover:shadow-large hover:border-primary hover:bg-secondary dark:border-rose-500 dark:bg-red-900 dark:hover:border-red-900 dark:hover:bg-rose-500 dark:shadow-small_dark dark:hover:shadow-large_dark
-  }  
+    @apply border-4 border-dashed border-secondary bg-primary py-4 px-6 font-body tracking-wider text-white shadow-small hover:border-primary hover:bg-secondary hover:shadow-large dark:border-rose-500 dark:bg-red-900 dark:shadow-small_dark dark:hover:border-red-900 dark:hover:bg-rose-500 dark:hover:shadow-large_dark;
+  }
 }
 
 html,
 body {
   padding: 0;
-  margin: 0;  
-  cursor: url("https://res.cloudinary.com/nobill/image/upload/v1631960506/portfolio2021/cursor.png"), auto;
+  margin: 0;
+  @apply cursor-blue-cursor dark:cursor-red-cursor;
 }
 
-html { 
+html {
   font-size: 18px;
 }
 
@@ -42,19 +42,21 @@ a {
 }
 
 * a {
-  cursor: url("https://res.cloudinary.com/nobill/image/upload/v1631960506/portfolio2021/pointer.png"), auto;
+  @apply cursor-blue-pointer dark:cursor-red-pointer;
 }
 
 * button {
-  cursor: url("https://res.cloudinary.com/nobill/image/upload/v1631960506/portfolio2021/pointer.png"), auto;
+  @apply cursor-blue-pointer dark:cursor-red-pointer;
 }
 
 .t-btn {
-  cursor: url("https://res.cloudinary.com/nobill/image/upload/v1631960506/portfolio2021/pointer.png"), auto;
+  @apply cursor-blue-pointer dark:cursor-red-pointer;
 }
 
-* p, li, a {
-  @apply dark:text-gray-300
+* p,
+li,
+a {
+  @apply dark:text-gray-300;
 }
 
 .loader-wrapper {
@@ -70,7 +72,7 @@ a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  @apply dark:bg-red-900
+  @apply dark:bg-red-900;
 }
 
 .logoSplash {
@@ -96,7 +98,7 @@ a {
 }
 
 .presentation {
-  height: calc(100vh - 80px)
+  height: calc(100vh - 80px);
 }
 
 .minor-section {
@@ -106,16 +108,16 @@ a {
 .sectionHeading {
   border-bottom: 4px dashed var(--color-secondary);
   flex-basis: auto;
-  @apply dark:text-red-900 dark:border-b-4 dark:border-b-rose-500
+  @apply dark:border-b-4 dark:border-b-rose-500 dark:text-red-900;
 }
 
 .picture {
   border: 4px dashed var(--color-primary);
   -webkit-transition: 0.5s cubic-bezier(0.01, 0.91, 0.32, 1.28);
   -o-transition: 0.5s cubic-bezier(0.01, 0.91, 0.32, 1.28);
-  transition: 0.5s cubic-bezier(0.01, 0.91, 0.32, 1.28); 
+  transition: 0.5s cubic-bezier(0.01, 0.91, 0.32, 1.28);
   aspect-ratio: 1 / 1;
-  @apply dark:border-b-4 dark:border-red-900 dark:shadow-small_dark dark:hover:shadow-large_dark
+  @apply dark:border-b-4 dark:border-red-900 dark:shadow-small_dark dark:hover:shadow-large_dark;
 }
 
 .picture:hover {
@@ -128,8 +130,8 @@ a {
   border: 4px dashed var(--color-primary);
   -webkit-transition: 0.5s cubic-bezier(0.01, 0.91, 0.32, 1.28);
   -o-transition: 0.5s cubic-bezier(0.01, 0.91, 0.32, 1.28);
-  transition: 0.5s cubic-bezier(0.01, 0.91, 0.32, 1.28);   
-  @apply dark:border-red-900 dark:shadow-small_dark dark:hover:shadow-large_dark
+  transition: 0.5s cubic-bezier(0.01, 0.91, 0.32, 1.28);
+  @apply dark:border-red-900 dark:shadow-small_dark dark:hover:shadow-large_dark;
 }
 
 .projectImg:hover {
@@ -168,7 +170,7 @@ a {
   -webkit-transition: 0.5s ease all;
   -o-transition: 0.5s ease all;
   transition: 0.5s ease all;
-  @apply dark:text-red-900
+  @apply dark:text-red-900;
 }
 
 .icon:hover {
@@ -186,11 +188,11 @@ a {
 
 .tech-items {
   border: 4px dashed var(--color-primary);
-  @apply dark:border-red-900
+  @apply dark:border-red-900;
 }
 
 @media (min-width: 1024px) {
-    .container {
-        max-width: 1024px;       
-    }
+  .container {
+    max-width: 1024px;
+  }
 }
