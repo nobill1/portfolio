@@ -24,51 +24,58 @@ function Presentation() {
           digital experiences.
         </p>
         <div className="mb-6">
-          <Link href="https://resume.io/r/7bUEJMzgT" target="_blank">
-            <a className="button">Resume</a>
+          <Link href="https://resume.io/r/7bUEJMzgT">
+            <a className="button" target="_blank" rel="noopener noreferrer">
+              Resume
+            </a>
           </Link>
         </div>
         <div className="mt-5 flex justify-center md:justify-start">
-          <a
-            href="https://www.hackerrank.com/no_bill"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="icon text-primary hover:text-secondary dark:hover:text-rose-500 mr-2 text-2xl"
-          >
-            <FaHackerrank />
-          </a>
-          <a
-            href="https://github.com/nobill1"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="icon text-primary hover:text-secondary dark:hover:text-rose-500 mr-2 text-2xl"
-          >
-            <FaGithub />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/nguimeya-bill-gates-9b614b146"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="icon text-primary hover:text-secondary dark:hover:text-rose-500 mr-2 text-2xl"
-          >
-            <FaLinkedinIn />
-          </a>
-          <a
-            href="https://codepen.io/Bill1"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="icon text-primary hover:text-secondary dark:hover:text-rose-500 mr-2 text-2xl"
-          >
-            <FaCodepen />
-          </a>
-          <a
-            href="https://www.instagram.com/go_bill_go/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="icon text-primary hover:text-secondary dark:hover:text-rose-500 text-2xl"
-          >
-            <FaInstagram />
-          </a>
+          <Link href="https://www.hackerrank.com/no_bill">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="icon text-primary hover:text-secondary dark:hover:text-rose-500 mr-2 text-2xl"
+            >
+              <FaHackerrank />
+            </a>
+          </Link>
+          <Link href="https://github.com/nobill1">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="icon text-primary hover:text-secondary dark:hover:text-rose-500 mr-2 text-2xl"
+            >
+              <FaGithub />
+            </a>
+          </Link>
+          <Link href="https://www.linkedin.com/in/nguimeya-bill-gates-9b614b146">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="icon text-primary hover:text-secondary dark:hover:text-rose-500 mr-2 text-2xl"
+            >
+              <FaLinkedinIn />
+            </a>
+          </Link>
+          <Link href="https://codepen.io/Bill1">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="icon text-primary hover:text-secondary dark:hover:text-rose-500 mr-2 text-2xl"
+            >
+              <FaCodepen />
+            </a>
+          </Link>
+          <Link href="https://www.instagram.com/go_bill_go/">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="icon text-primary hover:text-secondary dark:hover:text-rose-500 text-2xl"
+            >
+              <FaInstagram />
+            </a>
+          </Link>
         </div>
       </div>
       <div className="mmd:hidden flex w-60 flex-1 items-center justify-center xl:w-80">
