@@ -4,6 +4,8 @@ import {
   FaGit,
   FaJs,
   FaReact,
+  FaVuejs,
+  FaAngular,
   FaNodeJs,
   FaFigma,
 } from "react-icons/fa";
@@ -54,6 +56,14 @@ export default function Technologies() {
         <div className="tech-items flex flex-col items-center justify-center py-3">
           <SiNextdotjs className="mb-1 text-5xl text-secondary dark:text-rose-500" />
           <p className="font-body">NextJS</p>
+        </div>
+        <div className="tech-items flex flex-col items-center justify-center py-3">
+          <FaVuejs className="mb-1 text-5xl text-secondary dark:text-rose-500" />
+          <p className="font-body">Vue</p>
+        </div>
+        <div className="tech-items flex flex-col items-center justify-center py-3">
+          <FaAngular className="mb-1 text-5xl text-secondary dark:text-rose-500" />
+          <p className="font-body">Angular</p>
         </div>
         <div className="tech-items flex flex-col items-center justify-center py-3">
           <FaGit className="mb-1 text-5xl text-secondary dark:text-rose-500" />

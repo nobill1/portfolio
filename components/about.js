@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs } from "react-icons/fa";
+import { FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs, FaAngular, FaVuejs } from "react-icons/fa";
 import { SiGraphql, SiSvelte } from "react-icons/si";
 import { useTheme } from "next-themes";
 
@@ -8,12 +8,12 @@ export default function About() {
 
   return (
     <section
-      className="minor-section mx-4 mt-12 flex scroll-mt-24 flex-col sm:mx-0 md:flex-row md:items-start md:gap-4 lg:my-48 mmd:mt-16"
+      className="minor-section scroll-mt-24 mmd:mt-16 mx-4 mt-12 flex flex-col sm:mx-0 md:flex-row md:items-start md:gap-4 lg:my-48"
       id="about"
     >
       <div className="flex flex-col">
         <div>
-          <h2 className="sectionHeading mb-6 inline-block text-hd2 leading-none text-primary">
+          <h2 className="sectionHeading text-hd2 text-primary mb-6 inline-block leading-none">
             About me
           </h2>
         </div>
@@ -27,7 +27,7 @@ export default function About() {
         <p className="mt-2">
           A few technologies I have been working with recently:
         </p>
-        <ul className="mt-2 grid list-inside list-disc grid-cols-2 grid-rows-2 font-sans msm:grid-cols-1">
+        <ul className="msm:grid-cols-1 mt-2 grid list-inside list-disc grid-cols-2 grid-rows-2 font-sans">
           <li>
             HTML <FaHtml5 className="inline" />
           </li>
@@ -52,9 +52,15 @@ export default function About() {
           <li>
             Svelte <SiSvelte className="inline" />
           </li>
+          <li>
+            Vue <FaVuejs className="inline" />
+          </li>
+          <li>
+            Angular <FaAngular className="inline" />
+          </li>
         </ul>
       </div>
-      <div className="picture relative mt-4 w-full shadow-small hover:shadow-large md:mt-0 md:flex-shrink">
+      <div className="picture shadow-small hover:shadow-large relative mt-4 w-full md:mt-0 md:flex-shrink">
         <div
           id="overlay"
           className="absolute right-0 top-0 bottom-0 left-0"
