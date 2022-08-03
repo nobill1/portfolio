@@ -15,9 +15,6 @@ export default function Header() {
 
   return (
     <>
-      <Head>
-        <title>Nguimeya Bill-gates</title>
-      </Head>
       <div className="fixed z-10 w-screen bg-white bg-opacity-80 backdrop-blur-2xl dark:bg-black dark:bg-opacity-80 dark:backdrop-blur-2xl">
         <div className="container left-0 right-0 mx-auto flex items-center justify-between p-4">
           <div className="flex items-center sm:mx-auto">
@@ -56,18 +53,24 @@ export default function Header() {
 
           <div className="flex gap-2">
             {theme && currentTheme === "dark" ? (
-              <button className="text-2xl text-yellow-300 t-btn" onClick={() => setTheme("light")}>
-                <HiSun/>
+              <button
+                className="t-btn text-2xl text-yellow-300"
+                onClick={() => setTheme("light")}
+              >
+                <HiSun />
               </button>
             ) : (
-              <button className="text-2xl text-gray-500 t-btn" onClick={() => setTheme("dark")}>
-                <HiMoon/>
+              <button
+                className="t-btn text-2xl text-gray-500"
+                onClick={() => setTheme("dark")}
+              >
+                <HiMoon />
               </button>
             )}
 
             <button
               onClick={showSidebar}
-              className="text-2xl text-primary dark:text-red-900 transition-colors delay-100 hover:text-secondary focus:border-none dark:hover:text-rose-500 sm:hidden"
+              className="text-2xl text-primary transition-colors delay-100 hover:text-secondary focus:border-none dark:text-red-900 dark:hover:text-rose-500 sm:hidden"
             >
               <FaBars />
             </button>
