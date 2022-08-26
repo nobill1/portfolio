@@ -15,7 +15,9 @@ import {
   SiGraphql,
   SiMongodb,
   SiSvelte,
+  SiPostgresql
 } from "react-icons/si";
+import {AiOutlineConsoleSql} from "react-icons/ai"
 
 export default function Technologies() {
   return (
@@ -80,6 +82,14 @@ export default function Technologies() {
         <div className="tech-items flex flex-col items-center justify-center py-3">
           <SiMongodb className="mb-1 text-5xl text-secondary dark:text-rose-500" />
           <p className="font-body">Mongodb</p>
+        </div>
+        <div className="tech-items flex flex-col items-center justify-center py-3">
+          <AiOutlineConsoleSql className="mb-1 text-5xl text-secondary dark:text-rose-500" />
+          <p className="font-body">SQL</p>
+        </div>
+        <div className="tech-items flex flex-col items-center justify-center py-3">
+          <SiPostgresql className="mb-1 text-5xl text-secondary dark:text-rose-500" />
+          <p className="font-body">PostgreSQL</p>
         </div>
         <div className="tech-items flex flex-col items-center justify-center py-3">
           <i className="lni lni-ux mb-1 text-5xl text-secondary dark:text-rose-500"></i>

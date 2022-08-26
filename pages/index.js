@@ -9,10 +9,12 @@ import About from "../components/about";
 import styles from "../styles/Home.module.css";
 import Projects from "../components/projects";
 import Technologies from "../components/technologies";
+// import { useTheme } from "next-themes";
 
 function Index() {
   const [preloader, setPreloader] = useState(true);
   const [timer, setTimer] = useState(2);
+  // const { theme } = useTheme();
   const id = useRef(null);
 
   const clear = () => {
@@ -49,7 +51,7 @@ function Index() {
             <About />
             <Projects />
             <Technologies />
-            <section
+            {/* <section
               className="minor-section mx-4 mt-12 flex scroll-mt-24 flex-col justify-center sm:mx-0"
               id="blog"
             >
@@ -63,7 +65,7 @@ function Index() {
                   Coming soon!
                 </h3>
               </div>
-            </section>
+            </section> */}
             <section
               className="minor-section mx-4 mt-12 flex scroll-mt-24 flex-col justify-center sm:mx-0"
               id="contact"
@@ -79,7 +81,7 @@ function Index() {
                 </p>
               </div>
 
-              <div className="py-md mt-3 flex justify-center">
+              <div className="py-md mt-3 gap-7 flex flex-col justify-center items-center">
                 <Link
                   href="mailto:bnguimeya007@gmail.com"
                   target="_blank"
@@ -87,6 +89,8 @@ function Index() {
                 >
                   <a className="button">Get in touch!</a>
                 </Link>
+                {/* { theme == "dark" ? <div className="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="nguimeya-bill-gates-9b614b146" data-version="v1"><a className="badge-base__link LI-simple-link" href="https://cm.linkedin.com/in/nguimeya-bill-gates-9b614b146?trk=profile-badge">Nguimeya Bill-gates</a></div>
+               : <div className="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="nguimeya-bill-gates-9b614b146" data-version="v1"><a className="badge-base__link LI-simple-link" href="https://cm.linkedin.com/in/nguimeya-bill-gates-9b614b146?trk=profile-badge">Nguimeya Bill-gates</a></div>}               */}
               </div>
             </section>
           </main>
