@@ -32,5 +32,35 @@
             "live": "https://space-tourism-nobill1.vercel.app/",
             "tech": ["React", "NextJS", "Tailwindcss", "React-tabs"]
         }
+    ],
+    "interviews": [
+        {
+            "title": "Alexandria",
+            "description": "A board game where 2-4 players gain bonus or fall into traps for the finish line.",
+            "image": "",
+            "live": "https://alexandria-app-eight.vercel.app/",
+            "tech": ["React","Typescript", "sass", "zustand"]
+        },
+        {
+            "title": "IOThub",
+            "description": "I/O applications for smart devices.",
+            "image": "",
+            "live": "https://si-frontend-assessment.vercel.app/",
+            "tech": ["Vue", "vite", "Typescript", "Pinia", "axios", "sass"]
+        },
+        {
+            "title": "Bayes Esport",
+            "description": "Esport tournament filtering table.",
+            "image": "",
+            "live": "https://bayes-frontend.vercel.app/",
+            "tech": ["React", "Typescript"]
+        },
+        {
+            "title": "Shortly",
+            "description": "Web application to provide shortened links.",
+            "image": "",
+            "live": "https://shortly-blond.vercel.app/",
+            "tech": ["React", "Typescript", "axios", "react-hook-form"]
+        }
     ]
 }

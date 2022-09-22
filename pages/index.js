@@ -9,6 +9,7 @@ import About from "../components/about";
 import styles from "../styles/Home.module.css";
 import Projects from "../components/projects";
 import Technologies from "../components/technologies";
+import Interview from "../components/interview";
 // import { useTheme } from "next-themes";
 
 function Index() {
@@ -50,6 +51,7 @@ function Index() {
             <Presentation />
             <About />
             <Projects />
+            <Interview/>
             <Technologies />
             {/* <section
               className="minor-section mx-4 mt-12 flex scroll-mt-24 flex-col justify-center sm:mx-0"

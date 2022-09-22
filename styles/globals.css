@@ -191,6 +191,30 @@ a {
   @apply dark:border-red-900;
 }
 
+.interview-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 1rem;
+}
+
+.interview-items {
+  border: 4px dashed var(--color-primary);
+  @apply dark:border-red-900 dark:shadow-small_dark dark:hover:shadow-large_dark;
+}
+
+.interview-items:hover {
+  -webkit-transform: scale(1.01);
+  -ms-transform: scale(1.01);
+  transform: scale(1.01);
+}
+
+.modal {
+  width: clamp(50%, 500px, 60%);
+  height: auto;
+  @apply bg-white shadow-small dark:shadow-small_dark dark:bg-black;
+}
+
 @media (min-width: 1024px) {
   .container {
     max-width: 1024px;
