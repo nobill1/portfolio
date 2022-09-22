@@ -38,7 +38,7 @@
             "title": "Alexandria",
             "description": "A board game where 2-4 players gain bonus or fall into traps for the finish line.",
             "image": "",
-            "live": "https://alexandria-app-eight.vercel.app/",
+            "live": "",
             "tech": ["React","Typescript", "sass", "zustand"]
         },
         {
