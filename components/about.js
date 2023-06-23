@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs, FaAngular, FaVuejs } from "react-icons/fa";
-import { SiGraphql, SiSvelte } from "react-icons/si";
+import { FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs, FaAngular, FaVuejs, FaPython } from "react-icons/fa";
+import { SiDjango, SiGraphql, SiSvelte } from "react-icons/si";
 import { useTheme } from "next-themes";
 
 export default function About() {
@@ -18,7 +18,7 @@ export default function About() {
           </h2>
         </div>
         <p>
-          Hi! My name is Bill-gates,experienced and self-taught web developer. I
+          Hi! My name is Bill,experienced and self-taught web developer. I
           am proficient with modern web development tools and I have a good
           approach to web development from idea brainstorming to product
           deployment. I also enjoy working in team while teaching and learning
@@ -47,14 +47,11 @@ export default function About() {
             NodeJS <FaNodeJs className="inline" />
           </li>
           <li>
-            GraphQL <SiGraphql className="inline" />
+            Python <FaPython className="inline" />
           </li>
           <li>
-            Svelte <SiSvelte className="inline" />
-          </li>
-          <li>
-            Vue <FaVuejs className="inline" />
-          </li>
+            Django <SiDjango className="inline" />
+          </li>         
           <li>
             Angular <FaAngular className="inline" />
           </li>

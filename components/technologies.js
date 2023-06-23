@@ -8,6 +8,7 @@ import {
   FaAngular,
   FaNodeJs,
   FaFigma,
+  FaPython,
 } from "react-icons/fa";
 import {
   SiTypescript,
@@ -15,7 +16,8 @@ import {
   SiGraphql,
   SiMongodb,
   SiSvelte,
-  SiPostgresql
+  SiPostgresql,
+  SiDjango
 } from "react-icons/si";
 import {AiOutlineConsoleSql} from "react-icons/ai"
 
@@ -67,6 +69,14 @@ export default function Technologies() {
           <FaAngular className="mb-1 text-5xl text-secondary dark:text-rose-500" />
           <p className="font-body">Angular</p>
         </div>
+        <div className="tech-items flex flex-col items-center justify-center py-3">          
+          <FaPython className="mb-1 text-5xl text-secondary dark:text-rose-500"/>
+          <p className="font-body">Python</p>
+        </div>
+        <div className="tech-items flex flex-col items-center justify-center py-3">
+          <SiDjango className="mb-1 text-5xl text-secondary dark:text-rose-500" />
+          <p className="font-body">Django</p>
+        </div>
         <div className="tech-items flex flex-col items-center justify-center py-3">
           <FaGit className="mb-1 text-5xl text-secondary dark:text-rose-500" />
           <p className="font-body">Git</p>
@@ -75,14 +85,14 @@ export default function Technologies() {
           <FaNodeJs className="mb-1 text-5xl text-secondary dark:text-rose-500" />
           <p className="font-body">NodeJS</p>
         </div>
-        <div className="tech-items flex flex-col items-center justify-center py-3">
+        {/* <div className="tech-items flex flex-col items-center justify-center py-3">
           <SiGraphql className="mb-1 text-5xl text-secondary dark:text-rose-500" />
           <p className="font-body">Graphql</p>
         </div>
         <div className="tech-items flex flex-col items-center justify-center py-3">
           <SiMongodb className="mb-1 text-5xl text-secondary dark:text-rose-500" />
           <p className="font-body">Mongodb</p>
-        </div>
+        </div> */}
         <div className="tech-items flex flex-col items-center justify-center py-3">
           <AiOutlineConsoleSql className="mb-1 text-5xl text-secondary dark:text-rose-500" />
           <p className="font-body">SQL</p>

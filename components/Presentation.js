@@ -15,10 +15,10 @@ function Presentation() {
       <div className="presentation flex flex-col justify-center text-center md:text-left">
         <p>Hi, I am</p>
         <h1 className="font-body text-hd1 from-secondary to-primary dark:from-rose-500 msm:text-5xl break-words bg-gradient-to-r bg-clip-text leading-snug text-transparent dark:to-red-900 md:max-w-md">
-          Nguimeya Bill-gates
+          Nguimeya Bill
         </h1>
         <p className="mt-6 mb-10 md:max-w-md">
-          front end developer and graphic designer from{" "}
+          <span className="text-secondary dark:text-rose-500">Fullstack developer</span> from{" "}
           <span className="text-secondary dark:text-rose-500">Yaounde</span>,
           Cameroon. I specialize Web development and occasionally designing
           digital experiences.
