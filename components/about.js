@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs, FaAngular, FaVuejs, FaPython } from "react-icons/fa";
-import { SiDjango, SiGraphql, SiSvelte } from "react-icons/si";
+import { SiDjango } from "react-icons/si";
 import { useTheme } from "next-themes";
 
 export default function About() {
@@ -62,7 +62,22 @@ export default function About() {
           id="overlay"
           className="absolute right-0 top-0 bottom-0 left-0"
         ></div>
-        <Image
+        {
+          theme === "dark" ? <Image
+          src="https://res.cloudinary.com/nobill/image/upload/v1644462192/portfolio2021/poster_dark-05.png"         
+          alt="me"
+          width="512"
+          height="512"
+          layout="responsive"
+        /> : <Image
+        src="https://res.cloudinary.com/nobill/image/upload/v1631955604/portfolio2021/poster-01.png"         
+        alt="me"
+        width="512"
+        height="512"
+        layout="responsive"
+      />
+        }
+        {/* <Image
           src={
             theme === "dark"
               ? "https://res.cloudinary.com/nobill/image/upload/v1644462192/portfolio2021/poster_dark-05.png"
@@ -72,7 +87,7 @@ export default function About() {
           width="512"
           height="512"
           layout="responsive"
-        />
+        /> */}
       </div>
     </section>
   );
