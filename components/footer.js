@@ -8,7 +8,7 @@ export default function Footer() {
           <div className="flex flex-col text-white sm:w-3/6">
             <Logo className="h-10 w-10" />
             <h3 className="mt-2 font-body text-lg">Nguimeya Bill-gates</h3>
-            <p>Web Developer</p>
+            <p>Fullstack Developer</p>
             <p>bnguimeya007@gmail.com</p>
           </div>
           <div className="mt-9 flex flex-col text-white sm:mt-0 sm:max-w-xs sm:text-right">
