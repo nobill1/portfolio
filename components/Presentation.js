@@ -15,7 +15,7 @@ function Presentation() {
       <div className="presentation flex flex-col justify-center text-center md:text-left">
         <p>Hi, I am</p>
         <h1 className="font-body text-hd1 from-secondary to-primary dark:from-rose-500 msm:text-5xl break-words bg-gradient-to-r bg-clip-text leading-snug text-transparent dark:to-red-900 md:max-w-md">
-          Nguimeya Bill
+          Bill Nguimeya
         </h1>
         <p className="mt-6 mb-10 md:max-w-md">
           <span className="text-secondary dark:text-rose-500">Fullstack developer</span> from{" "}
