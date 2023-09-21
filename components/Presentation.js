@@ -78,8 +78,8 @@ function Presentation() {
           </Link>
         </div>
       </div>
-      <div className="mmd:hidden flex w-60 flex-1 items-center justify-center xl:w-80">
-        <Illustration className="w-60 xl:w-80" />
+      <div className="mmd:hidden flex w-auto flex-1 items-center justify-center xl:w-80">
+        <Illustration className="w-auto xl:w-80" />
       </div>
     </section>
   );

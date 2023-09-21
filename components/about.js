@@ -57,37 +57,18 @@ export default function About() {
           </li>
         </ul>
       </div>
-      <div className="picture shadow-small hover:shadow-large relative mt-4 w-full md:mt-0 md:flex-shrink">
+      <div className="picture shadow-small hover:shadow-large relative mt-4 w-full h-auto md:mt-0 md:flex-shrink">
         <div
           id="overlay"
           className="absolute right-0 top-0 bottom-0 left-0"
         ></div>
-        {
-          theme === "dark" ? <Image
-          src="https://res.cloudinary.com/nobill/image/upload/v1644462192/portfolio2021/poster_dark-05.png"         
+        <Image
+          src="https://res.cloudinary.com/nobill/image/upload/v1695285989/portfolio2021/1000006634.jpg"         
           alt="me"
-          width="512"
-          height="512"
+          width="3072"
+          height="4080"
           layout="responsive"
-        /> : <Image
-        src="https://res.cloudinary.com/nobill/image/upload/v1631955604/portfolio2021/poster-01.png"         
-        alt="me"
-        width="512"
-        height="512"
-        layout="responsive"
-      />
-        }
-        {/* <Image
-          src={
-            theme === "dark"
-              ? "https://res.cloudinary.com/nobill/image/upload/v1644462192/portfolio2021/poster_dark-05.png"
-              : "https://res.cloudinary.com/nobill/image/upload/v1631955604/portfolio2021/poster-01.png"
-          }
-          alt="me"
-          width="512"
-          height="512"
-          layout="responsive"
-        /> */}
+        />
       </div>
     </section>
   );
