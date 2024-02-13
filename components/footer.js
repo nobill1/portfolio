@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="container mx-auto flex flex-col px-4 pt-8 sm:flex-row sm:justify-between sm:px-0 lg:px-6">
           <div className="flex flex-col text-white sm:w-3/6">
             <Logo className="h-10 w-10" />
-            <h3 className="mt-2 font-body text-lg">Nguimeya Bill-gates</h3>
+            <h3 className="mt-2 font-body text-lg">Bill Nguimeya</h3>
             <p>Fullstack Developer</p>
             <p>bnguimeya007@gmail.com</p>
           </div>
@@ -22,7 +22,7 @@ export default function Footer() {
         <div className="container mx-auto lg:px-6">
           <hr className="mt-8 w-full border border-white" />
           <p className="py-4 text-center text-white">
-            &copy; Made by Nguimeya Bill-gates with{" "}
+            &copy; Made by Bill Nguimeya with{" "}
             <span className="text-secondary dark:text-rose-500">&#10084;</span>
           </p>
         </div>

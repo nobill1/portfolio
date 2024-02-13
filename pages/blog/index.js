@@ -5,7 +5,7 @@ function Index() {
   return (
     <>
       <Head>
-        <title>Nguimeya Bill-gates&apos; Blog</title>
+        <title>Bill Nguimeya&apos; Blog</title>
         <meta
           name="description"
           content="This is my blog page where you will find blog articles."
