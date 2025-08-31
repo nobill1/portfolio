@@ -27,7 +27,18 @@ class MyDocument extends Document {
           <meta property="profile:industry" content="Information Technology and Services"/>
           <meta property="profile:position:web-developer" content="Full-Stack Developer"/>
 
-
+          {/* Microsoft Clarity Analytics */}
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                (function(c,l,a,r,i,t,y){
+                  c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                  t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                  y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+                })(window, document, "clarity", "script", "t3ewmb2bu2");
+              `,
+            }}
+          />
 
           <link rel="icon" href="/favicon.png" />
           <link
