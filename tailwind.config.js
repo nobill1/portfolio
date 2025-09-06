@@ -18,7 +18,7 @@ module.exports = {
       },
       fontFamily: {
         body: ["Nippo", "sans-serif"],
-        sans: ["Teko", "sans-serif"],
+        sans: ["Oswald", "sans-serif"],
       },
       fontSize: {
         hd1: ["4rem"],

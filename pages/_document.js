@@ -51,10 +51,7 @@ class MyDocument extends Document {
             href="https://fonts.gstatic.com"
             crossOrigin="true"
           />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;600&display=swap"
-            rel="stylesheet"
-          />
+          <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet" />
           <link
             href="https://cdn.lineicons.com/3.0/lineicons.css"
             rel="stylesheet"

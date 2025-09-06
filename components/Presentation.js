@@ -24,57 +24,35 @@ function Presentation() {
           digital experiences.
         </p>
         <div className="mb-6">
-          <Link href="https://resume.io/r/7bUEJMzgT">
-            <a className="button" target="_blank" rel="noopener noreferrer">
-              Resume
-            </a>
+          <Link href="https://resume.io/r/7bUEJMzgT" className="button" target="_blank" rel="noopener noreferrer">            
+              Resume            
           </Link>
         </div>
         <div className="mt-5 flex justify-center md:justify-start">
-          <Link href="https://www.hackerrank.com/no_bill">
-            <a
-              target="_blank"
+          <Link href="https://www.hackerrank.com/no_bill" target="_blank"
               rel="noopener noreferrer"
-              className="icon text-primary hover:text-secondary dark:hover:text-rose-500 mr-2 text-2xl"
-            >
-              <FaHackerrank />
-            </a>
+              className="icon text-primary hover:text-secondary dark:hover:text-rose-500 mr-2 text-2xl">            
+              <FaHackerrank />            
           </Link>
-          <Link href="https://github.com/nobill1">
-            <a
-              target="_blank"
+          <Link href="https://github.com/nobill1" target="_blank"
               rel="noopener noreferrer"
-              className="icon text-primary hover:text-secondary dark:hover:text-rose-500 mr-2 text-2xl"
-            >
-              <FaGithub />
-            </a>
+              className="icon text-primary hover:text-secondary dark:hover:text-rose-500 mr-2 text-2xl">            
+              <FaGithub />            
           </Link>
-          <Link href="https://www.linkedin.com/in/nguimeya-bill-gates-9b614b146">
-            <a
-              target="_blank"
+          <Link href="https://www.linkedin.com/in/nguimeya-bill-gates-9b614b146" target="_blank"
               rel="noopener noreferrer"
-              className="icon text-primary hover:text-secondary dark:hover:text-rose-500 mr-2 text-2xl"
-            >
-              <FaLinkedinIn />
-            </a>
+              className="icon text-primary hover:text-secondary dark:hover:text-rose-500 mr-2 text-2xl">            
+              <FaLinkedinIn />            
           </Link>
-          <Link href="https://codepen.io/Bill1">
-            <a
-              target="_blank"
+          <Link href="https://codepen.io/Bill1" target="_blank"
               rel="noopener noreferrer"
-              className="icon text-primary hover:text-secondary dark:hover:text-rose-500 mr-2 text-2xl"
-            >
-              <FaCodepen />
-            </a>
+              className="icon text-primary hover:text-secondary dark:hover:text-rose-500 mr-2 text-2xl">            
+              <FaCodepen />            
           </Link>
-          <Link href="https://www.instagram.com/go_bill_go/">
-            <a
-              target="_blank"
+          <Link href="https://www.instagram.com/go_bill_go/" target="_blank"
               rel="noopener noreferrer"
-              className="icon text-primary hover:text-secondary dark:hover:text-rose-500 text-2xl"
-            >
-              <FaInstagram />
-            </a>
+              className="icon text-primary hover:text-secondary dark:hover:text-rose-500 text-2xl">            
+              <FaInstagram />            
           </Link>
         </div>
       </div>

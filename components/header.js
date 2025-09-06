@@ -18,36 +18,26 @@ export default function Header() {
       <div className="fixed z-10 w-screen bg-white bg-opacity-80 backdrop-blur-2xl dark:bg-black dark:bg-opacity-80 dark:backdrop-blur-2xl">
         <div className="container left-0 right-0 mx-auto flex items-center justify-between p-4">
           <div className="flex items-center sm:mx-auto">
-            <Link href="#about">
-              <a className="uppercase leading-none transition-colors delay-100 hover:text-secondary dark:hover:text-rose-500 sm:mr-10 msm:hidden">
-                about
-              </a>
+            <Link href="#about" className="uppercase leading-none transition-colors delay-100 hover:text-secondary dark:hover:text-rose-500 sm:mr-10 msm:hidden">              
+                about              
             </Link>
-            <Link href="#projects">
-              <a className="uppercase leading-none transition-colors delay-100 hover:text-secondary dark:hover:text-rose-500 msm:hidden">
-                projects
-              </a>
+            <Link href="#projects" className="uppercase leading-none transition-colors delay-100 hover:text-secondary dark:hover:text-rose-500 msm:hidden">              
+                projects              
             </Link>
-            <Link href="/">
-              <a className="logo z-20 flex justify-center sm:mx-14">
+            <Link href="/" className="logo z-20 flex justify-center sm:mx-14">              
                 <Image
                   src={theme === "dark" ? "/logo_dark.svg" : "/logo.svg"}
                   alt="logo"
                   width="47"
                   height="48"
                   className=""
-                />
-              </a>
+                />              
             </Link>
-            <Link href="#technologies">
-              <a className="uppercase leading-none transition-colors delay-100 hover:text-secondary dark:hover:text-rose-500 sm:mr-10 msm:hidden">
-                technologies
-              </a>
+            <Link href="#technologies" className="uppercase leading-none transition-colors delay-100 hover:text-secondary dark:hover:text-rose-500 sm:mr-10 msm:hidden">              
+                technologies              
             </Link>
-            <Link href="#contact">
-              <a className="uppercase leading-none transition-colors delay-100 hover:text-secondary dark:hover:text-rose-500 msm:hidden">
-                contact
-              </a>
+            <Link href="#contact" className="uppercase leading-none transition-colors delay-100 hover:text-secondary dark:hover:text-rose-500 msm:hidden">              
+                contact              
             </Link>
           </div>
 
@@ -88,31 +78,23 @@ export default function Header() {
               </div>
               <ul className="mt-16 flex flex-col">
                 <li className="ml-4 mb-8" onClick={showSidebar}>
-                  <Link href="#about">
-                    <a className="text-xl uppercase tracking-wider text-secondary transition-colors delay-100 hover:text-white dark:text-rose-500 dark:hover:text-white">
-                      about
-                    </a>
+                  <Link href="#about" className="text-xl uppercase tracking-wider text-secondary transition-colors delay-100 hover:text-white dark:text-rose-500 dark:hover:text-white">                    
+                      about                    
                   </Link>
                 </li>
                 <li className="ml-4 mb-8" onClick={showSidebar}>
-                  <Link href="#technologies">
-                    <a className="text-xl uppercase tracking-wider text-secondary transition-colors delay-100 hover:text-white dark:text-rose-500 dark:hover:text-white">
-                      technologies
-                    </a>
+                  <Link href="#technologies" className="text-xl uppercase tracking-wider text-secondary transition-colors delay-100 hover:text-white dark:text-rose-500 dark:hover:text-white">                    
+                      technologies                    
                   </Link>
                 </li>
                 <li className="ml-4 mb-8" onClick={showSidebar}>
-                  <Link href="#projects">
-                    <a className="text-xl uppercase tracking-wider text-secondary transition-colors delay-100 hover:text-white dark:text-rose-500 dark:hover:text-white">
-                      projects
-                    </a>
+                  <Link href="#projects" className="text-xl uppercase tracking-wider text-secondary transition-colors delay-100 hover:text-white dark:text-rose-500 dark:hover:text-white">                    
+                      projects                    
                   </Link>
                 </li>
                 <li className="ml-4 mb-8" onClick={showSidebar}>
-                  <Link href="#contact">
-                    <a className="text-xl uppercase tracking-wider text-secondary transition-colors delay-100 hover:text-white dark:text-rose-500 dark:hover:text-white">
-                      contact
-                    </a>
+                  <Link href="#contact" className="text-xl uppercase tracking-wider text-secondary transition-colors delay-100 hover:text-white dark:text-rose-500 dark:hover:text-white">                    
+                      contact                    
                   </Link>
                 </li>
               </ul>

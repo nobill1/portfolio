@@ -88,8 +88,9 @@ function Index() {
                   href="mailto:bnguimeya007@gmail.com"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="button"
                 >
-                  <a className="button">Get in touch!</a>
+                  Get in touch!
                 </Link>
                 {/* { theme == "dark" ? <div className="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="nguimeya-bill-gates-9b614b146" data-version="v1"><a className="badge-base__link LI-simple-link" href="https://cm.linkedin.com/in/nguimeya-bill-gates-9b614b146?trk=profile-badge">Nguimeya Bill-gates</a></div>
                : <div className="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="nguimeya-bill-gates-9b614b146" data-version="v1"><a className="badge-base__link LI-simple-link" href="https://cm.linkedin.com/in/nguimeya-bill-gates-9b614b146?trk=profile-badge">Bill Nguimeya</a></div>}               */}

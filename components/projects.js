@@ -19,8 +19,7 @@ export default function Projects() {
           return (
             <div key={index}>
               <div className="projectImg shadow-small hover:shadow-large relative mt-4 w-auto">
-                <Link href={project.live}>
-                  <a target="_blank" rel="noopener noreferrer">
+                <Link href={project.live} target="_blank" rel="noopener noreferrer">                  
                     <p>{project[index]}</p>
                     <div id="overlay" className="absolute h-full w-full"></div>
                     <Image
@@ -30,15 +29,12 @@ export default function Projects() {
                       height="1674"
                       layout="responsive"
                       className="h-full w-auto"
-                    />
-                  </a>
+                    />                  
                 </Link>
               </div>
               <h3 className="text-hd3 mt-2">
-                <Link href={project.live}>
-                  <a target="_blank" rel="noopener noreferrer">
-                    {project.title}
-                  </a>
+                <Link href={project.live} target="_blank" rel="noopener noreferrer">                  
+                    {project.title}                  
                 </Link>
               </h3>
               <p>{project.description}</p>
@@ -55,31 +51,23 @@ export default function Projects() {
                 })}
               </div>
               <div className="mt-2">
-                <Link href={project.repo}>
-                  <a
-                    className={
+                <Link href={project.repo} className={
                       project.repo.length < 1
                         ? "hidden"
                         : "icon text-primary hover:text-secondary dark:hover:text-rose-500 mr-2"
                     }
                     target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FaGithub className="inline text-xl" />
-                  </a>
+                    rel="noopener noreferrer">                 
+                    <FaGithub className="inline text-xl" />                  
                 </Link>
-                <Link href={project.live}>
-                  <a
-                    className={
+                <Link href={project.live} className={
                       project.live.length < 1
                         ? "hidden"
                         : "icon text-primary hover:text-secondary dark:hover:text-rose-500 mr-2"
                     }
                     target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FaLink className="inline text-xl" />
-                  </a>
+                    rel="noopener noreferrer">                  
+                    <FaLink className="inline text-xl" />                  
                 </Link>
               </div>
             </div>

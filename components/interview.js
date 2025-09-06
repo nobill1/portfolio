@@ -104,14 +104,9 @@ export default function Interview() {
                   );
                 })}
               </motion.div>
-              {data.interviews[selectedId].live ? <Link href={data.interviews[selectedId].live}>
-                  <a
-                    className="icon text-primary hover:text-secondary dark:hover:text-rose-500 mr-2 mt-4"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FaLink className="inline text-xl" />
-                  </a>
+              {data.interviews[selectedId].live ? <Link href={data.interviews[selectedId].live} className="icon text-primary hover:text-secondary dark:hover:text-rose-500 mr-2 mt-4"
+                    target="_blank">                  
+                    <FaLink className="inline text-xl" />                  
                 </Link> : <motion.span className="line-clamp-2 mt-2">
                 link not available
               </motion.span>}
