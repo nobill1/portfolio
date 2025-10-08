@@ -38,7 +38,7 @@ function Index() {
   return (
     <>
       <Head>
-        <title>Portfolio / Bill Nguimeya</title>
+        <title>Portfolio / Kosi Nguimeya</title>
       </Head>
       {preloader ? (
         <div className="loader-wrapper absolute">

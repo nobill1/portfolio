@@ -22,7 +22,7 @@ export default function Footer() {
         <div className="container mx-auto lg:px-6">
           <hr className="mt-8 w-full border border-white" />
           <p className="py-4 text-center text-white">
-            &copy; Made by Bill Nguimeya with{" "}
+            &copy; Made by Kosi Nguimeya with{" "}
             <span className="text-secondary dark:text-rose-500">&#10084;</span>
           </p>
         </div>

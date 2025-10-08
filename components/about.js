@@ -11,14 +11,14 @@ export default function About() {
       className="minor-section scroll-mt-24 mmd:mt-16 mx-4 mt-12 flex flex-col sm:mx-0 md:flex-row md:items-start md:gap-4 lg:my-48"
       id="about"
     >
-      <div className="flex flex-col">
+      <div className="flex flex-col flex-1 md:flex-2">
         <div>
           <h2 className="sectionHeading text-hd2 text-primary mb-6 inline-block leading-none">
             About me
           </h2>
         </div>
         <p>
-          Hi! My name is Bill,experienced and self-taught web developer. I
+          Hi! My name is Kosi,experienced and self-taught web developer. I
           am proficient with modern web development tools and I have a good
           approach to web development from idea brainstorming to product
           deployment. I also enjoy working in team while teaching and learning
@@ -57,7 +57,7 @@ export default function About() {
           </li>
         </ul>
       </div>
-      <div className="picture shadow-small hover:shadow-large relative mt-4 w-full h-auto md:mt-0 md:flex-shrink">
+      <div className="flex-1 picture shadow-small hover:shadow-large relative mt-4 md:mt-0 md:flex-shrink">
         <div
           id="overlay"
           className="absolute right-0 top-0 bottom-0 left-0"

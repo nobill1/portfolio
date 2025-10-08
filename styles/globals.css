@@ -115,8 +115,7 @@ a {
   border: 4px dashed var(--color-primary);
   -webkit-transition: 0.5s cubic-bezier(0.01, 0.91, 0.32, 1.28);
   -o-transition: 0.5s cubic-bezier(0.01, 0.91, 0.32, 1.28);
-  transition: 0.5s cubic-bezier(0.01, 0.91, 0.32, 1.28);
-  aspect-ratio: 1 / 1;
+  transition: 0.5s cubic-bezier(0.01, 0.91, 0.32, 1.28);  
   @apply dark:border-b-4 dark:border-red-900 dark:shadow-small_dark dark:hover:shadow-large_dark;
 }
 
