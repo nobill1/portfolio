@@ -1,11 +1,14 @@
 [build]
-command = "npm run build"
+# shortcut: a dashboard-installed @netlify/plugin-nextjs v3.9.2 copies .next/static
+# into `out` after the build and fails on files the static export already wrote.
+# Emptying .next/static leaves it nothing to copy. Drop the `&& ...` once that
+# plugin is removed from the Netlify project.
+command = "npm run build && rm -rf .next/static && mkdir -p .next/static"
 publish = "out"
 
 [build.environment]
 NODE_VERSION = "22"
-# Static export (output: 'export') publishes `out` as-is. The auto-installed
-# Next.js runtime copies .next/static into `out` too and fails on the clash.
+# Newer Next.js runtimes (v4+) honour this and skip themselves for a static export.
 NETLIFY_NEXT_PLUGIN_SKIP = "true"
 
 [[redirects]]
