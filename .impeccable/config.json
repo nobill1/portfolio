@@ -1,0 +1,14 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "overused-font",
+        "value": "geist",
+        "createdAt": "2026-11-24T14:57:03.041Z",
+        "reason": "Claude decided: Geist is body/label text only; display face is the brand's Nippo, and the scroll-craft skill's taste.md lists Geist as a recommended text face"
+      }
+    ]
+  }
+}

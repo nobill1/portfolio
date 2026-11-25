@@ -1,0 +1,177 @@
+/* Kosi Nguimeya portfolio: gallery grammar on the scrollcraft floor.
+   Brand navy is the room, brand teal is the one accent. */
+:root {
+  --sc-canvas: #0d0a33;
+  --sc-surface: #1b1464;
+  --sc-ink: #f3f0e8;
+  --sc-ink-soft: #b9b6da;
+  --sc-accent: #71c4bd;
+  --sc-accent-ink: #0d0a33;
+  --sc-font-display: "Nippo", "Geist", system-ui, sans-serif;
+  --sc-font-text: "Geist", system-ui, sans-serif;
+  --sc-font-mono: "Geist Mono", ui-monospace, monospace;
+  --sc-shadow-color: 246 70% 4%;
+  --kn-col: 15rem; /* the docent's column on desktop */
+}
+
+/* Dark: the site's original dark colours, rose-500 on red-900 and near-black. */
+.dark {
+  --sc-canvas: #0e0a0b;
+  --sc-surface: #6b1717; /* red-900, one step darker so the rose button clears 3:1 */
+  --sc-ink: #f6eeee;
+  --sc-ink-soft: #d2b8bc;
+  --sc-accent: #f43f5e;
+  --sc-accent-ink: #0e0a0b;
+  --sc-shadow-color: 350 45% 3%;
+}
+
+/* globals.css colours p/li/a under .dark; the id keeps this page on its own ink. */
+#kn, #kn :is(p, li, a, dd, dt, h1, h2, h3) { color: inherit; }
+#kn { color: var(--sc-ink); background: var(--sc-canvas); }
+#kn .sc-body, #kn dt { color: var(--sc-ink-soft); }
+
+/* ------------------------------------------------------------ chrome -- */
+.kn-bar { position: fixed; inset: 0 auto auto 0; z-index: var(--sc-z-chrome); padding: var(--sc-5) var(--sc-gutter); }
+.kn-mark img { width: 2.4rem; height: auto; }
+.kn-index ul { list-style: none; margin: var(--sc-6) 0 0; padding: 0; }
+.kn-index li + li { margin-top: var(--sc-2); }
+.kn-index a {
+  font-family: var(--sc-font-mono); font-size: var(--sc-t-xs);
+  letter-spacing: var(--sc-track-wide); text-transform: uppercase;
+  text-decoration: none; opacity: 0.62;
+  transition: opacity var(--sc-d-fast) var(--sc-ease-out);
+}
+.kn-index a:hover, .kn-index a[aria-current] { opacity: 1; }
+.kn-index a[aria-current] { text-decoration: underline; text-decoration-color: var(--sc-accent); text-decoration-thickness: 2px; }
+.kn-bar__end {
+  position: fixed; top: var(--sc-5); right: var(--sc-gutter);
+  display: flex; align-items: center; gap: var(--sc-5);
+}
+.kn-bar__cta { font-weight: 500; text-decoration: underline; text-decoration-color: var(--sc-accent); }
+.kn-theme {
+  display: grid; place-items: center; width: 2.25rem; height: 2.25rem; padding: 0;
+  background: none; border: 1px solid var(--sc-hairline-strong); border-radius: var(--sc-r-sm);
+  color: var(--sc-ink); font-size: 1.1rem;
+  transition: border-color var(--sc-d-fast) var(--sc-ease-out), color var(--sc-d-fast) var(--sc-ease-out);
+}
+.kn-theme svg { width: 1em; height: 1em; }
+.kn-theme:hover { border-color: var(--sc-accent); color: var(--sc-accent); }
+.kn-theme:active { transform: translateY(1px); }
+
+/* The docent: one fixed canvas for the whole page. --dock (0..1) is written
+   from scroll and moves him from the hero into the bottom-left corner. */
+.kn-docent {
+  position: fixed; left: 48vw; top: 0; width: 52vw; height: 100vh; height: 100svh;
+  z-index: 30; pointer-events: none;
+  transform-origin: 0 100%;
+  transform: translateX(calc(var(--dock, 0) * (1.25rem - 48vw))) scale(calc(1 - var(--dock, 0) * 0.55 + var(--focus, 0) * 0.3));
+}
+.kn-docent canvas { max-width: none; }
+
+/* ------------------------------------------------------------- label -- */
+.kn-label__name {
+  font-family: var(--sc-font-display); font-weight: 500;
+  font-size: var(--sc-t-xl); line-height: var(--sc-leading-tight);
+  letter-spacing: var(--sc-track-snug); margin: 0 0 var(--sc-4);
+  text-wrap: balance;
+}
+.kn-label dl { margin: 0; border-top: 1px solid var(--sc-hairline-strong); }
+.kn-label dl > div {
+  display: grid; grid-template-columns: 6.5rem 1fr; gap: var(--sc-4);
+  padding-block: var(--sc-3); border-bottom: 1px solid var(--sc-hairline);
+}
+.kn-label dt { font-family: var(--sc-font-mono); font-size: var(--sc-t-xs); letter-spacing: var(--sc-track-wide); text-transform: uppercase; padding-top: 0.2em; }
+.kn-label dd { margin: 0; font-size: var(--sc-t-sm); line-height: 1.55; }
+.kn-links { display: flex; flex-wrap: wrap; gap: var(--sc-2) var(--sc-5); }
+.kn-links a, .kn-textlink { text-decoration: underline; text-decoration-color: var(--sc-accent); transition: color var(--sc-d-fast) var(--sc-ease-out); }
+.kn-links a:hover, .kn-textlink:hover { color: var(--sc-accent); }
+
+/* -------------------------------------------------------------- hero -- */
+.kn-hero { background: var(--sc-canvas); }
+.kn-hero__word {
+  position: absolute; right: -2vw; top: 14vh; margin: 0;
+  font-family: var(--sc-font-display); font-size: 31vw; line-height: 0.8;
+  letter-spacing: -0.04em; user-select: none;
+}
+#kn .kn-hero__word { color: var(--sc-surface);
+}
+.kn-hero__glow {
+  position: absolute; right: 10vw; top: 18vh; width: 44vw; height: 70vh; border-radius: 50%;
+  background: radial-gradient(closest-side, color-mix(in oklab, var(--sc-accent) 26%, transparent), transparent);
+}
+.kn-hero__copy { left: calc(var(--kn-col) + var(--sc-gutter)); max-width: min(34rem, 40vw); }
+.kn-hero .kn-label__name { font-size: var(--sc-t-3xl); line-height: var(--sc-leading-none); letter-spacing: var(--sc-track-tight); }
+
+/* ----------------------------------------------------- flow rooms ---- */
+.kn-room { padding-left: calc(var(--kn-col) + var(--sc-gutter)); padding-right: var(--sc-gutter); }
+.kn-profile { display: grid; grid-template-columns: 1fr minmax(15rem, 24rem); gap: var(--sc-8); align-items: end; }
+.kn-profile__photo { margin: 0; }
+.kn-profile__photo img { width: 100%; height: auto; border-radius: var(--sc-r-sm); box-shadow: var(--sc-e2); }
+
+.kn-assess { padding-top: var(--sc-9); }
+.kn-assess__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--sc-7) var(--sc-8); margin-top: var(--sc-7); max-width: 58rem; }
+.kn-assess__grid span { color: var(--sc-ink-soft); }
+.kn-materials { margin-top: var(--sc-9); max-width: 58rem; }
+.kn-materials p { margin: var(--sc-3) 0 0; font-family: var(--sc-font-display); font-size: var(--sc-t-lg); line-height: 1.5; text-wrap: pretty; }
+
+/* ------------------------------------------------------- work rail -- */
+.kn-work { background: var(--sc-canvas); }
+.kn-rail {
+  height: 100%; align-items: center; gap: var(--sc-9);
+  padding-inline: calc(var(--kn-col) + var(--sc-gutter)) var(--sc-gutter);
+  width: max-content;
+}
+.kn-rail__lead { width: clamp(15rem, 24vw, 22rem); flex: none; }
+.kn-rail__end { width: clamp(14rem, 20vw, 18rem); flex: none; }
+.kn-exhibit { width: clamp(18rem, 34vw, 32rem); flex: none; }
+.kn-exhibit__shot { margin-bottom: var(--sc-5); }
+.kn-exhibit__shot img { width: 100%; height: auto; border-radius: var(--sc-r-sm); box-shadow: var(--sc-e3); }
+
+/* ------------------------------------------------------------- close -- */
+.kn-close { background: var(--sc-surface); }
+.kn-close__plate {
+  position: absolute; top: 50%; translate: 0 -50%;
+  left: calc(var(--kn-col) + var(--sc-gutter)); width: min(30rem, 60vw);
+}
+.kn-cta {
+  display: inline-block; padding: var(--sc-2) var(--sc-4); border-radius: var(--sc-r-sm);
+  background: var(--sc-accent); color: var(--sc-accent-ink) !important; font-weight: 600;
+  text-decoration: none !important; box-shadow: var(--sc-e1);
+  transition: transform 120ms var(--sc-ease-out), background-color var(--sc-d-fast) var(--sc-ease-out);
+}
+.kn-cta:hover { background: color-mix(in oklab, var(--sc-accent) 86%, white); }
+.kn-cta:active { transform: translateY(1px); }
+.kn-foot {
+  position: absolute; bottom: var(--sc-5); left: calc(var(--kn-col) + var(--sc-gutter)); right: var(--sc-gutter);
+  display: flex; justify-content: space-between; gap: var(--sc-4); font-size: var(--sc-t-xs);
+}
+.kn-foot p { margin: 0; color: var(--sc-ink-soft) !important; }
+.kn-foot ul { list-style: none; display: flex; gap: var(--sc-5); margin: 0; padding: 0; }
+
+/* ------------------------------------------------------------ phones -- */
+@media (max-width: 859px) {
+  :root { --kn-col: 0rem; }
+  .kn-bar { inset: 0 0 auto 0; display: flex; align-items: center; justify-content: space-between; padding: var(--sc-3) var(--sc-gutter); }
+  .kn-index { display: none; }
+  .kn-bar__end { position: static; gap: var(--sc-4); }
+  .kn-docent { left: 0; width: 100vw; height: 62svh; transform: none; opacity: calc(1 - var(--dock, 0) * 1.6); }
+  .kn-hero__word { font-size: 46vw; top: 12vh; right: -4vw; }
+  .kn-hero__glow { right: 0; width: 100vw; height: 56vh; top: 8vh; }
+  .kn-hero__copy { max-width: none; bottom: var(--sc-6); }
+  .kn-hero .kn-label__name { font-size: var(--sc-t-2xl); }
+  .kn-hero .kn-label dl > div:nth-child(2) { display: none; } /* stack row: keeps the hero to one screen */
+  .kn-profile { grid-template-columns: 1fr; gap: var(--sc-6); }
+  .kn-profile__photo { max-width: 20rem; }
+  .kn-assess__grid { grid-template-columns: 1fr; }
+  .kn-exhibit { width: 78vw; }
+  .kn-rail { gap: var(--sc-7); }
+  .kn-close__plate { width: auto; right: var(--sc-gutter); }
+  .kn-foot { flex-direction: column; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .kn-docent { transform: none; left: 48vw; opacity: calc(1 - var(--dock, 0) * 1.6); }
+}
+@media (prefers-reduced-motion: reduce) and (max-width: 859px) {
+  .kn-docent { left: 0; }
+}
